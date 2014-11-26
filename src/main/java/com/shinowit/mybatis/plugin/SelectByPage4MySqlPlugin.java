@@ -240,8 +240,7 @@ public class SelectByPage4MySqlPlugin extends PluginAdapter {
 			selectMaxPrimaryKeyElement.addElement(new TextElement("select max("+MyBatis3FormattingUtilities.getAliasedEscapedColumnName(pks.get(0))+") from "+introspectedTable.getAliasedFullyQualifiedTableNameAtRuntime()));
 			parentElement.addElement(selectMaxPrimaryKeyElement);
 		}
-		
-		
+
 		return true;
 	}
 
